@@ -24,3 +24,9 @@ while True :
         print(f"🎊congratulations 🎉 you guessed it right in {guesses} attempts🎊")
         #to break out of loop after guessing the correct number 
         break
+
+name = str(input("Enter player name : "))
+score = guesses
+
+with open("scores01.txt","a") as f:
+    f.write(f"player : {name} , {score} \n")
